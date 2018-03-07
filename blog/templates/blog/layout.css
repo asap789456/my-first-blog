@@ -1,0 +1,341 @@
+*{
+	margin: 0 auto;
+	width: 960px;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: Verdana;
+}
+/*-----------------------------------------------------
+					iheader css
+-----------------------------------------------------*/
+#header{
+	position: relative;
+
+}
+#header p{
+	display: inline;	
+}
+
+/*-----------------------------------------------------
+					logo css
+-----------------------------------------------------*/
+
+#logo img{
+	position: relative;
+	height: 230px;
+	width: 350px;
+}
+
+/*-----------------------------------------------------
+					nav css
+-----------------------------------------------------*/
+.topnav{
+	list-style: none;
+	padding: 20px 0px;
+	overflow: hidden;
+	background: #000;
+	width: 960px;
+}
+.topnav li{
+	display: inline;
+
+}
+.li a, .dropbtn, .dropdown{
+	display: inline;
+	color: white;
+	text-align: center;
+	padding: 20px 45px;
+	text-decoration: none;
+
+}
+
+/* #hot:hover{
+ 	height: 100px;
+ 	background: #ddd;
+ }*/
+
+/*.li a:hover, .dropdown:hover, .act{
+	background: #4caf50;
+}*/
+.dropdown-content{
+	display: none;
+	position: absolute;
+	margin: 10px 0 0 260px;
+	background: #000;
+	width: 150px;
+	height: 50px;
+	z-index: 1000;
+	text-align: center;
+}
+.dropdown a:link {
+  text-decoration :none;
+  color:#fff;
+}
+.dropdown-content a{
+	color: #fff;
+	margin-left: 40px;
+	text-align: left;
+	left: 35px;
+	text-decoration: none;
+	display: block;
+}
+.dropdown-content a:hover{
+	color: #ddd;
+	width: 150px;
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+#ranking {
+	line-height: 1px solid #ddd;
+}
+/*-----------------------------------------------------
+					banner css
+-----------------------------------------------------*/
+
+#banner ol{
+	list-style: none;
+}
+#bannr img{
+	border: 0;
+}
+#banner section.container{
+	position: relative;
+	width: 960px;
+	height: 400px;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+}
+#banner section ul.banner_mask{
+	overflow: hidden;
+	position: absolute;
+	width: 960px;
+	height: 450px;
+}
+#banner section ul.banner_mask li{
+	position: absolute;
+	
+}
+#banner section.container input{
+	display: none;
+}
+section.container input.banner_input1:checked ~ .banner_mask li:nth-child(1),
+section.container input.banner_input2:checked ~ .banner_mask li:nth-child(2),
+section.container input.banner_input3:checked ~ .banner_mask li:nth-child(3){
+	transition: left 0.5s ease-in-out;
+	left: 0;
+	z-index: 10;
+}
+section.container input:checked ~ .banner_mask li{
+	-webkit-animation: slideOut 0.5s ease-in-out none;
+}
+@-webkit-keyframes slideOut{
+	0% {left: 0;}
+	100% {left: -300px;}
+}
+section.container label { /*배너 안에 동그라미*/
+	position: relative;
+	float: left;
+	width: 12px;
+	height: 12px;
+	top: 370px;
+	left: 450px;
+	margin-left: 10px;
+	background: #666;
+	cursor: pointer;
+	z-index: 1000;
+	border-radius: 50px/50px;
+}
+section.container label:hover{
+	background: #fff;
+}
+/*-----------------------------------------------------
+					best goods css
+-----------------------------------------------------*/
+#best img, #bestpage img{
+	width: 300px;
+	height: 350px;
+}
+#best1 img{
+	width: 220px;
+	height: 270px;
+}
+#best, #bestpage{
+	position: relative;
+	margin-top: 50px;
+
+}
+#best1{
+
+	margin: 30px 0px 5px 10px;
+}
+#line{
+	border: 1px solid #666666;
+	margin: 0px 0px 20px 10px;
+}
+#h2 {
+	margin-bottom: 50px;
+}
+#best img{
+	/*display: inline-block; */
+	/*border: 2px solid black; */
+	/*padding: 5px 15px;*/
+ 	font-weight: bold; 
+ 	letter-spacing: 3px;
+ }
+.box1, .box2{
+	display: none;
+	position: absolute;
+	background: #ddd;
+	width: 300px;
+	height: 90px;
+	z-index: 10000;
+ }
+
+#best img:hover{
+	opacity: 0.25;
+}
+.hot1:hover .box1{
+	display: block;
+	position: absolute;
+	padding-top: 10PX;
+	top: 250px;
+	left: 24px;
+	color: #000;
+	font-size: 50px;
+	font-weight: bold;
+
+
+ }
+.hot2:hover .box2{
+	display: block;
+	position: absolute;
+	padding-top: 10PX;
+	top: 250px;
+	left: 330px;
+	color: #000;
+	font-size: 50px;
+	font-weight: bold;
+	opacity: 0.7;
+
+ }
+/*-----------------------------------------------------
+					footer css
+-----------------------------------------------------*/
+#footer{
+	width: 960px;
+	height: 150px;
+}
+
+/*-----------------------------------------------------
+					회원가입 창 css
+-----------------------------------------------------*/
+#join_page{
+	margin-top: 80px;
+}
+#join_page input{
+	width: 200px;
+	height: 30px;
+	padding: 2px 2px 2px 2px;
+}
+h4{
+	position: relative;
+	top: -40px;
+}
+.line{
+	border: 1px solid #000000;
+	margin-left: -120px;
+}
+#button1{
+	position: relative;
+	left: 400px;
+}
+
+.names,.ema,.hint,.phone,.line,#join_page input.over1,#join_page input.hint1{
+	position: relative;
+	top: -30px;
+	left: 120px;
+}
+#join_page input.over,#join_page input.over1{
+	width: 100px;
+}
+
+.ema{
+	width: 208px;
+}
+#join_page input.phone, .phone{
+	width: 60px;
+}
+.phone{
+	height: 35px;
+}
+.hint,#join_page input.hint,#join_page input.hint1{
+	width: 600px;
+}
+#join_page input.hint1{
+	margin-top: 10px;
+}
+.btn{
+	position: relative;
+	top: -15px;
+	left: -500px;
+	width: 8px;
+	height: 8px;
+	background:  #c53434;
+	z-index: 1000;
+	border-radius: 50px/50px;
+	background-image: -webkit-linear-gradient(top,
+		rgba(255,255,255,0.9),
+		rgba(255,255,255,0.4)50%,
+		rgba(255,255,255,0.05));
+}
+/*-----------------------------------------------------
+					page페이지 css
+-----------------------------------------------------*/
+.pagebutton{
+	position: relative;
+	display: inline-block;
+	width: 150px;
+	height: 20px;
+	padding: 15px 0;
+	top: 50px;
+	left: 10px;
+	border-radius: 15px;
+	background-image: -webkit-linear-gradient(top,
+		rgba(0,0,0,1),rgba(0,0,0,1));
+}
+.pagebutton:hover{
+	background-image: -webkit-linear-gradient(top,
+		rgba(197,52,52,1),rgba(221,88,88,1));
+	box-shadow: 0px 2px 1px -1px rgba(19,67,126,0.9),
+				0px 2px 3px 1px rgba(19,67,126,0.4);
+}
+.pagebutton span{
+	position: absolute;
+	top: 1px;
+	width: 150px;
+	height: 1px;
+	padding: 11px 0;
+	background-image: -webkit-linear-gradient(top,
+	rgba(255,255,255,0.9),rgba(255,255,255,0.4)50%,rgba(255,255,255,0.05));
+	color: #fff;
+	font-weight: 1.1em;
+	text-align: center;
+}
+#bestpage{
+	margin: 100px 0 100px 0;
+}
+.buttonpage{
+	position: relative;
+	left: 80px;
+	margin-bottom: 20px;
+}
+.buttonpage1{
+	position: relative;
+	left: 150px;
+}
+
+#buttons{
+	position: relative;
+	left: 160px;
+}
